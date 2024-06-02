@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برامج سياحية لعسير</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: green;
+}
+
+.table-container {
+    margin-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: green;
+    color: white;
+}
+
+td img {
+    width: 100px;
+    height: auto;
+}
+
+.table-container h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.logo{
+    width: 160px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+h1{
+ color: green;
+ text-align: center;
+}
+.logo{
+    width: 160px;
+    margin-top: -40px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: start;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -300px;
+
+}
+
+
+.btn {
+    display: flex;
+    gap: 150px; /* المسافة بين الأزرار */
+
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* لون النص */
+    background-color: green; /* لون الخلفية */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  0.3s ease;
+
+}
+
+button:hover {
+    background-color: black; /* لون الخلفية عند التمرير */
+}
+@media (max-width: 768px) {
+    td img {
+        width: 50px;
+        height: auto;
+    }
+
+    .message {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .table-container h2 {
+        font-size: 18px;
+    }
+
+    td img {
+        width: 40px;
+        height: auto;
+    }
+
+    .message {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    th, td {
+        padding: 4px;
+        font-size: 12px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <h1>برامج سياحية لمنطقة عسير</h1>
+
+        <header>
+            <div class="logo">Aseer</div>
+            <div class="btn">
+            <button class="home">الرئيسية</button>
+            <button class="button">الاماكن السياحية</button>
+            <button class="faq"> أسئلة وأجوبة</button>
+            <button class="contact">أتصل بنا</button>
+            <button class="events">الفعاليات</button>
+            <button class="hospital"> المستشفيات والمراكز الصحية</button>
+            </div>
+     </header>
+    <div class="table-container">
+        <!-- جدول لمدة يومين -->
+        <h2>برنامج سياحي لمدة يومين</h2>
+        <table id="table1">
+            <thead>
+                <tr>
+                    <th>اليوم</th>
+                    <th>المكان</th>
+                    <th>أبرز ما يميز المكان</th>
+                    <th>الفعاليات</th>
+                    <th>صورة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>اليوم الأول</td>
+                    <td>منتزه عسير الوطني</td>
+                    <td>مناظر طبيعية خلابة</td>
+                    <td>تخييم، رحلات المشي</td>
+                    <td><img src="منتزه عسير الوطني ٢.jpeg" alt="منتزه عسير الوطني"></td>
+                </tr>
+                <tr>
+                    <td>اليوم الثاني</td>
+                    <td>قرية المفتاحة</td>
+                    <td>فن وثقافة محلية</td>
+                    <td>زيارة المعارض والمتاحف</td>
+                    <td><img src="قرية المفتاحة.jpeg" alt="قرية المفتاحة"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- جدول لمدة 1-6 أيام -->
+        <h2>برنامج سياحي لمدة 1-6 أيام</h2>
+        <table id="table2">
+            <thead>
+                <tr>
+                    <th>اليوم</th>
+                    <th>المكان</th>
+                    <th>أبرز ما يميز المكان</th>
+                    <th>الفعاليات</th>
+                    <th>صورة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>اليوم الأول</td>
+                    <td>الجبل الأخضر</td>
+                    <td>إطلالة ساحرة</td>
+                    <td>ركوب التلفريك</td>
+                    <td><img src="الجبل الاخضر٢.jpeg" alt="الجبل الأخضر"></td>
+                </tr>
+                <tr>
+                    <td>اليوم الثاني</td>
+                    <td>منتزه السودة</td>
+                    <td>أجواء باردة ومناظر خلابة</td>
+                    <td> الكشتات والتجمعات</td>
+                    <td><img src="منتزه السودة.jpeg" alt="منتزه السودة"></td>
+                </tr>
+                <tr>
+                    <td>اليوم الثالث</td>
+                    <td>المدينة العالية</td>
+                    <td>مطاعم ومقاهي والعاب مذهلة</td>
+                    <td> تجربة المطاعم والكافيهات المميزة واللعب بالالعاب العالمية</td>
+                    <td><img src="المدينة العالية.jpeg"  alt=" المدينة العالية"></td>
+                </tr>
+                <tr>
+                    <td>اليوم الرابع</td>
+                    <td>وادي لجب</td>
+                    <td>السيول والجبال والمناضر الباعثة للتأمل</td>
+                    <td>  رحلات هايكنج</td>
+                    <td><img src="وادي لجب .jpeg" alt="وادي لجب"></td>
+                </tr>
+                <tr>
+                    <td>اليوم الخامس</td>
+                    <td>شارع الفن </td>
+                    <td> الفن ساحر مختلف جدا عن أي مكان أخر</td>
+                    <td>يمكنك المشاركة بفنك او رؤية فنانين في مختلف المجالات والتعرف عليهم </td>
+                    <td><img src="شارع الفن.jpeg" alt="شارع الفن"></td>
+                </tr>
+                <tr>
+                    <td>اليوم  السادس</td>
+                    <td> قرية ذي عين التراثيه </td> 
+                    <td>من أبرز المعالم التاريخية لواحدة من أهم القرى العريقة</td>
+                    <td>التعرف على الثقافة المميزة لآهل المنطقة</td>
+                    <td><img src="قرية ذي عين التراثية.webp" alt="قرية ذي عين التراثيه "></td>
+                </tr>
+                <!-- أضف المزيد من الأيام هنا حسب الحاجة -->
+            </tbody>
+        </table>
+
+        <!-- جدول لمدة 1-10 أيام -->
+        <h2>برنامج سياحي لمدة 1-10 أيام</h2>
+        <table id="table3">
+            <thead>
+                <tr>
+                    <th>اليوم</th>
+                    <th>المكان</th>
+                    <th>أبرز ما يميز المكان</th>
+                    <th>الفعاليات</th>
+                    <th>صورة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>اليوم الأول</td>
+                    <td>منتزه الحبلة</td>
+                    <td>تشكيلات صخرية مذهلة</td>
+                    <td>مشاهدة المناظر الطبيعية</td>
+                    <td><img src="منتزه الحبله.jpeg" alt="منتزه الحبلة"></td>
+                </tr>
+                <tr>
+                    <td>اليوم الثاني</td>
+                    <td>قصر شدا</td>
+                    <td>تراث معماري</td>
+                    <td>زيارة المتحف</td>
+                    <td><img src="قصر شذا.jpeg" alt="قصر شدا"></td>
+                </tr>
+                <tr>
+                    <td>اليوم الثالث</td>
+                    <td>متحف المقر</td>
+                    <td>قطع أثرية مميزة وفن من انحاء المعالم </td>
+                    <td>مسابقات عن القطع الأثرية</td>
+                    <td><img src="متحف المقر ٢.jpeg" alt=" متحف المقر"></td>
+                </tr>
+                <tr>
+                    <td>اليوم الرابع</td>
+                    <td>حديقة الشلال </td>
+                    <td>برك مائية و مساحات خضراء مترامية وألعاب ممتعة</td>
+                    <td> المشي واللعب التأمل</td>
+                    <td><img src="حديقة الشلال.jpeg" alt=" حديقة الشلال"></td>
+                </tr>
+                <tr>
+                    <td>اليوم الخامس</td>
+                    <td>مزرعة اعناب السياحية </td>
+                    <td>محوصلات زراعية لها غطاء نباتي من أشجار الفاكهه والاشجار المحليه المعمره والحمضيات و الزيتون وغيرها</td>
+                    <td>  التمتع بالشراء الفاكهة والخضراوات الطازجة و التعلم اكثر عن الزاعة </td>
+                    <td><img src="مزرعة اعناب السياحية٢.jpeg" alt="مزرعة  اعناب السياحية "></td>
+                </tr>
+                <tr>
+                    <td>اليوم السادس</td>
+                    <td>مركز هوساك للرحلات </td>
+                    <td>رحلات وأنشطة و جولات</td>
+                    <td>التزلج في الوديان، ركوب الدراجات، التنزه والتخييم</td>
+                    <td><img src="مركز هوساك للرحلات.jpeg" alt="مركز هوساك للرحلات "></td>
+                </tr>
+                <tr>
+                    <td>اليوم السابع</td>
+                    <td> متحف فاطمة</td>
+                    <td> النباتات العطرية والأنماط الهندسية والزخارف الزاهية،اعترف به اليونسكو كتراث غير مادي. </td> 
+                    <td>المشاركة في ورش تعليمية للتعرف على هذا الفن واقتناء منتجات مزي.</td>
+                    <td><img src="متحف فاطمة.jpeg" alt="متحف فاطمة"></td>
+                </tr>
+                <tr>
+                    <td>اليوم  الثامن</td>
+                    <td> منتزه وحديقة الجنوب للحيوانات </td>
+                    <td> جميع انواع الحيوانات من المفترسة والمتوحشة الى الأليفة المطيعة </td>
+                    <td>رؤية حيوانك المفضل اياً كان نوعه</td>
+                    <td><img src="حديقة الحيوان ابها.jpeg" alt="منتزه وحديقة الجنوب للحيوانات"></td>
+                </tr>
+                <tr>
+                    <td>اليوم التاسع</td>
+                    <td> كوخ العسل  </td>
+                    <td> جميع انواع العسل المحلي و أجواء ريفية ومحلية في آن واحد.</td>
+                    <td>تناول العسل الشهي مع القهوة في جلسات عربية ثقافية مطلة على مناظر الجبال والمساحات الخضراء الخلابة.</td>
+                    <td><img src="كوخ العسل.jpeg" alt="كوخ العسل"></td>
+                </tr>
+                <tr>
+                    <td>اليوم  العاشر</td>
+                    <td>مطل حبو</td>
+                    <td>قرى ريفية محاطة بمناظر طبيعية تجمع بين الشجر بالجبل والضباب</td>
+                    <td>الأستمتاع بالأجواء الثقافية والريفية في آن واحد و تجربة الهاكينق لمن يحبه</td>
+                    <td><img src="مطل حبو.jpeg" alt="مطل حبو"></td>
+                </tr>
+                <!-- أضف المزيد من الأيام هنا حسب الحاجة -->
+            </tbody>
+        </table>
+    </div>
+  <script>
+  
+  document.querySelectorAll('table tbody tr').forEach(row => {
+    row.addEventListener('click', () => {
+        alert("اضغط على صفحة الاماكن السياحية لتجد معلومات آضافية");
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const button = document.querySelector('.button');
+
+// إضافة مستمع للأحداث (event listener) للنقر على الزر
+button.addEventListener('click', function() {
+    // إعادة توجيه المستخدم إلى الصفحة المطلوبة
+    window.location.href = 'places.html';
+});
+    const contact = document.querySelector('.contact');
+    if (contact) {
+        contact.addEventListener('click', function() {
+            window.location.href = 'contact.html';
+        });
+    }
+
+    const home = document.querySelector('.home');
+    if (home) {
+        home.addEventListener('click', function() {
+            window.location.href = 'home.html';
+        });
+    }
+
+    const faq = document.querySelector('.faq');
+    if (faq) {
+        faq.addEventListener('click', function() {
+            window.location.href = 'faq.html';
+        });
+    }
+
+});
+const tours = document.querySelector('.tours');
+    if (tours) {
+        tours.addEventListener('click', function() {
+            window.location.href = 'tours.html';
+        });
+    }
+const events = document.querySelector('.events');
+    if (events) {
+        events.addEventListener('click', function() {
+            window.location.href = 'events.html';
+        });
+    }
+    const hospital = document.querySelector('.hospital');
+    if (hospital) {
+        hospital.addEventListener('click', function() {
+            window.location.href = 'hospital.html';
+        });
+    }
+
+  </script>
+    <script src="scripts.js"></script>
+</body>
+</html>

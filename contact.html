@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    color: green;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.section p, .section ul {
+    color: #666;
+    line-height: 1.6;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    padding: 5px 0;
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f9fa; /* لون الخلفية */
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+    color: green;
+
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 1200px;
+ }
+
+.btn {
+    display: flex;
+    gap: 50px; /* المسافة بين الأزرار */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* لون النص */
+    background-color:green; /* لون الخلفية */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  0.3s ease;
+}
+
+button:hover {
+    background-color: black; /* لون الخلفية عند التمرير */
+}
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+}
+
+
+
+</style>
+</head>
+<body>
+    <div class="logo">Aseer</div>             <h1 class="heading"> أتصل بنا</h1>            
+
+    <div class="container">      
+        <header>
+            <div class="btn">
+              <button class="home">الرئيسية</button>
+              <button class="button">الاماكن السياحية</button>
+              <button class="tours">الجداول السياحية</button>
+              <button class="faq"> أسئلة وأجوبة</button>
+              <button class="events">الفعاليات</button>
+              <button class="hospital">مستشفيات ومراكز صحية</button>
+
+    </div>
+    </header>  
+        <div class="section">
+            <h2>وزارة السياحة</h2>
+            <p><strong>الهاتف:</strong>00966118808855 - 930 </p>
+            <p><strong>البريد الإلكتروني:</strong> <a href="mailto:info@mt.gov.sa">info@mt.gov.sa</a></p>
+        </div>
+        <div class="section">
+            <h2>أرقام تهمك في عسير</h2>
+            <ul>
+                <li><strong>الإسعاف:</strong> 997</li>
+                <li><strong>الشرطة:</strong> 999</li>
+                <li><strong>الدفاع المدني:</strong> 998</li>
+                <li><strong>الهلال الأحمر:</strong> 997</li>
+                <li><strong>أمانة منطقة عسير:</strong> 940</li>
+                <li><strong>المرور:</strong> 993</li>
+                <li><strong>شركة المياه الوطنية (بلاغات المياه):</strong>8004411110 </li>
+                <li><strong>شركة الكهرباء (بلاغات الأعطال):</strong> 00966112019000 - 8001259000</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>تطبيقات مهمة في عسير</h2>
+            <ul>
+                <li><a href="https://ta.sdaia.gov.sa" target="_blank">توكلنا</a></li>
+                <li><a href="https://www.moh.gov.sa/eServices/Sehhaty/Pages/default.aspx" target="_blank">صحتي</a></li>
+                <li><a href="https://balady.gov.sa/Services/DownloadApp" target="_blank">بلدي</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=sa.gov.moi.kollonaaman" target="_blank">كلنا أمن</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const button = document.querySelector('.button');
+
+// إضافة مستمع للأحداث (event listener) للنقر على الزر
+button.addEventListener('click', function() {
+    // إعادة توجيه المستخدم إلى الصفحة المطلوبة
+    window.location.href = 'places.html';
+});
+    const contact = document.querySelector('.contact');
+    if (contact) {
+        contact.addEventListener('click', function() {
+            window.location.href = 'contact.html';
+        });
+    }
+
+    const home = document.querySelector('.home');
+    if (home) {
+        home.addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    }
+
+    const faq = document.querySelector('.faq');
+    if (faq) {
+        faq.addEventListener('click', function() {
+            window.location.href = 'faq.html';
+        });
+    }
+
+});
+const tours = document.querySelector('.tours');
+    if (tours) {
+        tours.addEventListener('click', function() {
+            window.location.href = 'tours.html';
+        });
+    }
+const events = document.querySelector('.events');
+    if (events) {
+        events.addEventListener('click', function() {
+            window.location.href = 'events.html';
+        });
+    }
+    const hospital = document.querySelector('.hospital');
+    if (hospital) {
+        hospital.addEventListener('click', function() {
+            window.location.href = 'hospital.html';
+        });
+    }
+
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" >
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+        <title>الفعاليات </title>
+        <link rel = "stylesheet" href = "main.css">
+    </head>
+<style>
+    *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    height: 90%;
+    width: 100%;
+    display: block;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    width: 85vw;
+    margin: 40px auto;
+
+}
+
+.img-box{
+    position: relative;
+    height: 90%;
+
+}
+
+.info{
+    background: #252525;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+
+
+}
+
+.info h2{
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.info p{
+    padding: 10px 0;
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+/*** for js **/
+
+.hidePara{
+    display: none;
+    height: 90%;
+
+}
+
+/**************/
+
+.info a{
+    display: block;
+    background: #fff;
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #272727;
+    transition: all 1.5s ease;
+}
+
+.info a:hover{
+    background: lightgray;
+}
+
+.shape{
+    height: 0;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: all 1s ease;
+    height: 90%;
+
+}
+
+.shape h2{
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.img-box:hover .shape{
+    height: 40px;
+}
+
+.logo{
+    width: 160px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+h1{
+ color: green;
+ text-align: center;
+}
+.logo{
+    width: 160px;
+    margin-top: -40px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: start;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f9fa; /* لون الخلفية */
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn {
+    display: flex;
+    gap: 10px; /* المسافة بين الأزرار */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* لون النص */
+    background-color: green; /* لون الخلفية */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  0.3s ease;
+}
+
+button:hover {
+    background-color: black; /* لون الخلفية عند التمرير */
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 1170px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+    <body>
+        <header>
+            <div class="logo">Aseer</div>
+            <h1 class="heading"> الفعاليات</h1>
+            <div class="btn">
+            <button class="home">الرئيسية</button>
+            <button class="button">الاماكن السياحية</button>
+            <button class="tours">الجداول السياحية</button>
+            <button class="faq"> أسئلة وأجوبة</button>
+            <button class="contact">أتصل بنا</button>
+            <button class="hospital">مستشفيات مراكز صحية</button>
+            </div>
+            </header>
+    
+        <!-- main container -->
+        <div class = "container">
+            <div class = "img-box">
+            <div class = "shape">
+                    <h2>فعاليتك هنا</h2>
+                </div>
+
+                <img src = "بحيرة سد ابها.jpeg" alt="image" height="800px">
+
+                <div class = "info">
+                    <h2>بحيرة سد ابها</h2>
+                    <p class = "hidePara">
+                        في هذا المكان المميز مجموعة كبيرة من الألعاب العالمية التي يصل عددها إلى 
+                        35 لعبة ما بين ألعاب المغامرة وأخرى ألكترونية ،
+                         ومجموعة أخرى من الألعاب المائية المُمتعة والشيّقة، 
+                        التي تتطلب شحن طاقتك لمواجهة تلك التجربة الرائعة، كما يضم مناطق متعددة
+                         لألعاب الأطفال التي تمنحهم المرح والبهجة.
+
+
+                        </p>
+
+                    <a href = "#">أظهر</a>
+                </div>
+            </div>
+
+            <div class = "img-box">
+                <div class = "shape">
+                    <h2>فعاليتك هنا </h2>
+                </div>
+
+                <img src = "منتزه عسير الوطني.jpeg" alt = "image" height="800px">
+
+                <div class = "info">
+                    <h2>متنزه عسير الوطني</h2>
+                    <p class = "hidePara">
+                        يوفرمساحات خضراء تدفع على الاسترخاء والتأمل في رحابها، والتخلص من ضغوطات العمل،
+                         بل ويوجد به أماكن مخصصة للترفيه والترويح عن النفس.
+
+                        كما يضم المنتزه داخله عدد من المنتزهات الترفيهية
+                         والتي يمكن زيارتها خلال التواجد به مثل منتزه السودة، منتزه الأمير سلطان،
+                          المدينة العالية، ومنتزه دلغان وغيره.
+                        والفعاليات لا تتوقف هناك من مشاهدة الطيور والحيوانات الى تسلق الجبال والصخور 
+                        الى المدينة العالية التي تضم عدد من الكافيهات والمقاهي
+                         والفنادق والمنتجعات والشقق السكنية والشاليهات،
+                         وتلبي احتياجات الزوار من كافة الجوانب.
+                    </p>
+
+                    <a href = "#">أظهر</a>
+                </div>
+            </div>
+
+            <div class = "img-box">
+                <div class = "shape">
+                    <h2>فعاليتك هنا </h2>
+                </div>
+
+                <img src = "مهرجان جازان الشتوي.jpeg" alt = "image" height="800px">
+
+                <div class = "info">
+                    <h2>مهرجان جازان</h2>
+                    <p class = "hidePara">
+                     
+                        نظمه مجلس التنمية السياحية بمنطقة جازان بالتعاون مع الهيئة العامة للسياحة والآثار تحت مسمى «جازان 
+                        الفل مشتى الكل» ويشتمل على العديد من البرامج والأنشطة والفعاليات والعروض المسرحية،
+                         ويستمر المهرجان لمدة شهر كامل حيث يهدف إلى إبراز تراث المنطقة الشعبي وتقديمه كمنتج سياحي
+                         من خلال قرية جازان التراثية الواقعة على كورنيش جازان الجنوبي التي أصبحت أحد معالم المنطقة البارزة.​
+                        </p>
+
+                    <a href = "#">أظهر</a>
+                </div>
+            </div>
+
+            <div class = "img-box">
+                <div class = "shape">
+                    <h2>فعاليتك هنا </h2>
+                </div>
+
+                <img src = "مركز هوساك للرحلات.jpeg" alt = "image" height="800px">
+
+                <div class = "info">
+                    <h2>مركز هوساك للرحلات </h2>
+                    <p class = "hidePara">
+                       
+                        قدم مركز المغامرات الذي تمت ترقيته حديثًا مجموعة واسعة من التجارب الخارجية التي سمحت للزوار بالانغماس في تضاريس عسير المذهلة والوعرة. بدءًا من المشي لمسافات طويلة عبر المسارات الجذابة، أو التجديف بالكاياك في المياه الهادئة، أو ركوب الدراجات الجبلية، أو الهبوط من قمم الجبال، أو القيام
+                         بجولة مثيرة بعربة الجاذبية. كان لدى هوساك شيء للجميع.
+
+                        هوساك افتتح أول نزل في المملكة العربية السعودية. يعد بيت الشباب مثاليًا للأصدقاء والمسافرين المنفردين، 
+                        ويوفر صالات نوم مشتركة منفصلة للذكور فقط والإناث فقط ومجهزة بأسرّة بطابقين. 
+                        استمتع المسافرون براحة خدمة الواي فاي وبياضات الأسرّة 
+                         النظيفة والاستحمام والحمامات.
+
+
+                    </p>
+
+                    <a href = "#">أظهر</a>
+                </div>
+            </div>
+
+            <div class = "img-box">
+                <div class = "shape">
+                    <h2>فعاليتك هنا</h2>
+                </div>
+
+                <img src = "متحف المقر.jpeg" alt = "image" width="800px">
+
+                <div class = "info">
+                    <h2>متحف المقر</h2>
+                    <p class = "hidePara">
+                       
+                        يحتضن القصر الواقع في قلب منطقة عسير مجموعة هائلة من 
+                        المخطوطات والقطع الأثرية القديمة.
+                         استكشف المجموعة الواسعة التي يضمها القصر، بما في ذلك أكثر
+                          من ألف مخطوطة يدوية للقرآن الكريم،
+                         مما يجعله الحاضن الأول لمثل هذه الكنوز. يقدم القصر 
+                          خدمات فاخرة وأماكن إقامة مريحة للزوار،
+                          مما يضمن لك زيارة لا تُنسى. أثناء تجوالك في أرجاء 
+                      القصر، ستكتشف في كل زاوية قصة من الماضي، مما
+                        يعدك بتجربة ثقافية وتاريخية لا مثيل لهأ.
+                    </p>
+
+                    <a href = "#">أظهر</a>
+                </div>
+            </div>
+
+            <div class = "img-box">
+                <div class = "shape">
+                    <h2>فعاليتك هنا </h2>
+                </div>
+
+                <img src = "مزرعة أعناب السياحية.jpeg" alt = "image" height="800px">
+
+                <div class = "info">
+                    <h2>مزرعة أعناب السياحية</h2>
+                    <p class = "hidePara">
+
+                        
+                        اكتشف سحر مزرعة أعناب السياحية في قلب منطقة، حيث الحقول الخضراء المحملة بأشهى الفواكه المحلية
+                         من التين والعنب والرمان والخوخ.
+
+                       استمتع بجولة هادئة بين البساتين، حيث تضفي الألوان الزاهية
+                        والروائح المنعشة للفواكه جواً ساحراً على المكان.
+                         توفر المزرعة مناطق جلوس مريحة للاسترخاء وتناول الوجبات والمشروبات المنعشة وسط طبيعة عسير الخلابة. 
+                          هذا الملاذ الهادئ مثالي لقضاء يوم ممتع مع الأهل والأصدقاء.
+                    </p>
+
+                    <a href = "#">أظهر</a>
+                </div>
+            </div>
+        </div>
+    <script>
+        const btnCollection = document.querySelectorAll('.info a');
+
+btnCollection.forEach(function(element, index){
+    let btn = element;
+
+    btn.addEventListener('click', function(e){
+        e.preventDefault();
+
+        let text = btn.previousElementSibling;
+
+        text.classList.toggle('hidePara');
+
+        if(text.className === 'hidePara'){
+            btn.textContent = "أظهر";
+        } else {
+            btn.textContent = "أخفي";
+        }
+    })
+})
+const button = document.querySelector('.button');
+
+// إضافة مستمع للأحداث (event listener) للنقر على الزر
+button.addEventListener('click', function() {
+    // إعادة توجيه المستخدم إلى الصفحة المطلوبة
+    window.location.href = 'places.html';
+});
+const contact = document.querySelector('.contact');
+
+// إضافة مستمع للأحداث (event listener) للنقر على الزر
+contact.addEventListener('click', function() {
+    // إعادة توجيه المستخدم إلى الصفحة المطلوبة
+    window.location.href = 'contact.html';
+});
+const home = document.querySelector('.home');
+
+// إضافة مستمع للأحداث (event listener) للنقر على الزر
+home.addEventListener('click', function() {
+    // إعادة توجيه المستخدم إلى الصفحة المطلوبة
+    window.location.href = 'index.html';
+});
+const tours = document.querySelector('.tours');
+
+// إضافة مستمع للأحداث (event listener) للنقر على الزر
+tours.addEventListener('click', function() {
+    // إعادة توجيه المستخدم إلى الصفحة المطلوبة
+    window.location.href = 'tours.html';
+});
+const faq = document.querySelector('.faq');
+
+// إضافة مستمع للأحداث (event listener) للنقر على الزر
+faq.addEventListener('click', function() {
+    // إعادة توجيه المستخدم إلى الصفحة المطلوبة
+    window.location.href = 'faq.html';
+});
+const hospital = document.querySelector('.hospital');
+
+// إضافة مستمع للأحداث (event listener) للنقر على الزر
+hospital.addEventListener('click', function() {
+    // إعادة توجيه المستخدم إلى الصفحة المطلوبة
+    window.location.href = 'hospital.html';
+});
+
+
+
+
+    </script>
+
+
+        <script src = "script.js"></script>
+    </body>
+</html>

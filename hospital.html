@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مستشفيات ومراكز صحية عسير</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: green;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+main {
+    padding: 20px;
+}
+
+.hospital {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 0; /* لإخفاء العنصر في البداية حتى يتم تفعيله عبر التحركات */
+    transform: translateY(20px); /* نقل العنصر للأسفل قليلاً لعمل تأثير الحركة */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* تأثير الانتقال */
+}
+
+.hospital img {
+    max-width: 150px;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+.hospital-info {
+    flex: 1;
+}
+
+.hospital-info h2 {
+    margin-top: 0;
+}
+
+.hospital-info p {
+    margin: 5px 0;
+}
+
+.hospital-info a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hospital-info a:hover {
+    color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <header  class="navbar">
+        <h1>المستشفيات والمراكز الصحية</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="places.html">الأماكن السياحية</a></li>
+                <li><a href="events.html">الفعاليات</a></li>
+                <li><a href="tours.html">جداول سياحية</a></li>
+                <li><a href="faq.html">أسئلة وأجوبة</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    
+
+    </header>
+    <main>
+        <section class="hospital animate__animated">
+            <img src="مستشفى عسير المركزي.jpg_large" alt="صورة المستشفى">
+            <div class="hospital-info">
+                <h2>مستشفى عسير المركزي</h2>
+                <p>العنوان: شارع الأمير سلطان بن عبدالعزيز، الربوة، أبها </p>
+                <p>رقم الهاتف: 0123456789</p>
+                <a href="https://ach-it.com/ach/" target="_blank" rel="noopener">الموقع الإلكتروني</a>
+            </div>
+        </section>
+        <section class="hospital animate__animated">
+            <img src="مستشفى-الحياة-الوطني-محايل-2024.jpg" alt="صورة المستشفى">
+            <div class="hospital-info">
+                <h2>مستشفى الحياة الوطني</h2>
+                <p>العنوان: الخالدية، محايل عسير  </p>
+                <p>رقم الهاتف: 9876543210</p>
+                <a href="https://hayathospitals.com/" target="_blank" rel="noopener">الموقع الإلكتروني</a>
+            </div>
+        </section>
+    </section>
+    <section class="hospital animate__animated">
+        <img src="مستشفى النماص العام.png" alt="صورة المستشفى">
+        <div class="hospital-info">
+            <h2>مستشفى النماص المركزي</h2>
+            <p>العنوان: طريق الملك فيصل،النماص</p>
+            <p>رقم الهاتف: 017 282 1334</p>
+            <a href="https://www.moh.gov.sa/Pages/Default.aspx" target="_blank" rel="noopener">الموقع الإلكتروني</a>
+        </div>
+    </section>
+</section>
+<section class="hospital animate__animated">
+    <img src="مستشفى خميس مشيط.jpeg" alt="صورة المستشفى">
+    <div class="hospital-info">
+        <h2> مستشفى خميس مشيط العام        </h2>
+        <p>العنوان:  طريق الملك خالد، الشفاء، خميس مشيط </p>
+        <p>رقم الهاتف: 017 237 1919   </p>
+        <a href="http://hospital2.com" target="_blank" rel="noopener">الموقع الإلكتروني</a>
+    </div>
+</section>
+</section>
+<section class="hospital animate__animated">
+    <img src="المستشفى السعودي الالماني.jpeg" alt="صورة المستشفى">
+    <div class="hospital-info">
+        <h2>  المستشفى السعودي الالماني     </h2>
+        <p>العنوان:  طريق الملك فهد، حجله، خميس مشيط </p>
+        <p>رقم الهاتف:  9200 07997  </p>
+        <a href="https://aseer.saudigermanhealth.com/ar" target="_blank" rel="noopener">الموقع الإلكتروني</a>
+    </div>
+</section>
+</section>
+<section class="hospital animate__animated">
+    <img src="مستشفى المداواة .jpeg" alt="صورة المستشفى">
+    <div class="hospital-info">
+        <h2>   مستشفى المداواة التخصصية الطبية        </h2>
+        <p>العنوان: King Abdullah Bin Abdul Aziz Rd، النزهة، محايل عسير  </p>
+        <p>رقم الهاتف: 017 285 6666   </p>
+        <a href="https://www.almodawat.sa/" target="_blank" rel="noopener">الموقع الإلكتروني</a>
+    </div>
+</section>
+</section>
+<section class="hospital animate__animated">
+    <img src="دافيتا.jpeg" alt="صورة المستشفى">
+    <div class="hospital-info">
+        <h2>  مستشفي دافيتا   </h2>
+        <p>العنوان: المحالة، أبها  </p>
+        <p>رقم الهاتف:  017 279 5430  </p>
+        <a href="https://www.davita.sa/home/find_centers" target="_blank" rel="noopener">الموقع الإلكتروني</a>
+    </div>
+</section>
+</section>
+<section class="hospital animate__animated">
+    <img src="مجمع حمزة الطبية.jpeg" alt="صورة المستشفى">
+    <div class="hospital-info">
+        <h2>   مجمع الدكتور حمزة الطبي        </h2>
+        <p>العنوان:  شارع عامر بن شرحبيل، أبها </p>
+        <p>رقم الهاتف:   017 226 1600 </p>
+        <a href="https://drhamzahabha.com/" target="_blank" rel="noopener">الموقع الإلكتروني</a>
+    </div>
+</section>
+</section>
+<section class="hospital animate__animated">
+    <img src="مركز الرعاية الصحية بابها.jpeg" alt="صورة المستشفى">
+    <div class="hospital-info">
+        <h2>    مركز صحي حي الموظفين        </h2>
+        <p>العنوان: Unnamed Road, أبها        </p>
+        <p>رقم الهاتف:  017 227 0624  </p>
+        <a href="https://www.moh.gov.sa/Pages/Default.aspx" target="_blank" rel="noopener">الموقع الإلكتروني</a>
+    </div>
+</section>
+</section>
+<section class="hospital animate__animated">
+    <img src="مستشفى رجال المع.png" alt="صورة المستشفى">
+    <div class="hospital-info">
+        <h2>   مستشفى رجال ألمع        </h2>
+        <p>العنوان:عسير، رجال ألمع        </p>
+        <p>رقم الهاتف: 017 258 0019   </p>
+        <a href="https://www.moh.gov.sa/Ministry/Projects/TCP/Pages/Asir.aspx" target="_blank" rel="noopener">الموقع الإلكتروني</a>
+    </div>
+</section>
+</section>
+<section class="hospital animate__animated">
+    <img src="مركز صحي المنهل.jpeg" alt="صورة المستشفى">
+    <div class="hospital-info">
+        <h2>   مركز صحي المنهل        </h2>
+        <p>العنوان: طريق الملك فهد، النزهة، أبها </p>
+        <p>رقم الهاتف:  017 225 1921   </p>
+        <a href="https://www.moh.gov.sa/Pages/Default.aspx" target="_blank" rel="noopener">الموقع الإلكتروني</a>
+    </div>
+</section>
+</section>
+<section class="hospital animate__animated">
+    <img src="مركز صحي سبت تنومة.jpeg" alt="صورة المستشفى">
+    <div class="hospital-info">
+        <h2>     مركز صحي سبت تنومة   </h2>
+        <p>العنوان:عسير، تنومة </p>
+        <p>رقم الهاتف:   172826741 </p>
+        <a href="https://www.moh.gov.sa/Pages/Default.aspx" target="_blank" rel="noopener">الموقع الإلكتروني</a>
+    </div>
+</section>
+</section>
+<section class="hospital animate__animated">
+    <img src=".jpeg" alt="صورة المستشفى">
+    <div class="hospital-info">
+        <h2>     </h2>
+        <p>العنوان:  </p>
+        <p>رقم الهاتف:    </p>
+        <a href="" target="_blank" rel="noopener">الموقع الإلكتروني</a>
+    </div>
+</section>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+    $(document).ready(function() {
+    // تفعيل التحركات عند التمرير
+    $('.hospital').waypoint(function() {
+        $(this.element).addClass('animate__fadeInUp').css('opacity', 1).css('transform', 'translateY(0)');
+    }, {
+        offset: '75%' // نسبة الظهور من الجزء السفلي من الصفحة
+    });
+});
+ 
+function openNav() {
+        document.getElementById("navbar").style.width = "250px";
+    }
+    
+    function closeNav() {
+        document.getElementById("navbar").style.width = "0";
+    }
+    const button = document.querySelector('.button');
+
+        // إضافة مستمع للأحداث (event listener) للنقر على الزر
+        button.addEventListener('click', function() {
+            // إعادة توجيه المستخدم إلى الصفحة المطلوبة
+            window.location.href = 'places.html';
+        });
+  
+    </script>
+</body>
+</html>
